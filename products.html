@@ -420,8 +420,20 @@ section{padding:5.5rem 2rem;}
   max-width:200px;
   max-height:200px;
   object-fit:contain;
+  object-position:center;
   display:block;
-  filter:drop-shadow(0 10px 28px rgba(28,50,39,.12));
+  background:transparent;
+  border:0;
+  outline:0;
+  box-shadow:none;
+  /* soft shadow only — avoid dark edge artifacts looking like a stroke */
+  filter:drop-shadow(0 8px 18px rgba(28,50,39,.10));
+}
+.carousel-shot img[src*="caps-"],
+.carousel-shot img[src*="sport-"],
+.carousel-shot img[src*="drinks-"],
+.carousel-shot img[src*="fresh-"]{
+  /* tin/bottle PNGs already include their own lighting */
 }
 .carousel-copy{width:100%;max-width:54ch;margin:0 auto;}
 .carousel-copy .chip-row{justify-content:center;}
@@ -862,91 +874,138 @@ footer p{font-size:.8rem;opacity:.6;max-width:70ch;margin:0 auto .5rem;}
         <div class="carousel-track" id="carouselTrack">
           <div class="carousel-slide" data-slide="0">
             <div class="carousel-shot">
-              <img src="sport-protein.png" alt="RINGANA SPORT protein powder" loading="lazy" decoding="async" width="200" height="240">
+              <img src="sport-protein.png" alt="RINGANA SPORT protein powder" loading="lazy" decoding="async" width="200" height="200">
             </div>
             <div class="carousel-copy">
               <p class="radar-kicker">SPORT · Protein Powder</p>
-              <p><strong>SPORT Protein Powder</strong> (vegan &amp; gluten free) is at the top of my list — clean fuel for building and maintaining muscle and endurance as I show up stronger in midlife.</p>
+              <p><strong>SPORT protein</strong> (vegan &amp; gluten free) is at the top of my list — clean fuel for building and maintaining muscle and endurance so I can show up as the most powerful version of myself in midlife.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Plant protein" data-ingredients="Vegan protein blend formulated without gluten — designed for everyday muscle maintenance and recovery." data-why="As a woman in midlife focused on strength training, I want protein that supports muscle without a compromise ingredient list.">Plant protein</button>
+                <button type="button" class="chip ingredient-chip" data-label="Vegan &amp; gluten free" data-ingredients="Made to fit clean, intentional nutrition standards — vegan and gluten free." data-why="Those aren't marketing checkboxes for me — they're part of how I holistically support my body after years of reading every label.">Vegan &amp; gluten free</button>
+                <button type="button" class="chip ingredient-chip" data-label="Strength &amp; recovery" data-ingredients="Protein contributes to the growth and maintenance of muscle mass." data-why="I'm training for endurance and power — for my children and for the life I'm building — and recovery has to keep up.">Strength &amp; recovery</button>
+              </div>
+              <p class="chip-hint">Tap + on any chip for ingredients and why they matter</p>
             </div>
           </div>
 
           <div class="carousel-slide" data-slide="1">
             <div class="carousel-shot">
-              <img src="sport-endurance.png" alt="RINGANA SPORT endurance &amp; performance" loading="lazy" decoding="async" width="200" height="240">
+              <img src="sport-endurance.png" alt="RINGANA SPORT endurance &amp; performance" loading="lazy" decoding="async" width="200" height="200">
             </div>
             <div class="carousel-copy">
               <p class="radar-kicker">SPORT · Endurance &amp; Performance</p>
-              <p><strong>SPORT endurance &amp; performance</strong> supports the training I'm prioritizing now — strength, stamina, and showing up as the most powerful version of myself for my children.</p>
+              <p><strong>SPORT endurance &amp; performance</strong> supports the training season I'm in now — stamina, output, and the kind of consistency that lets me keep showing up strong.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Endurance support" data-ingredients="Plant-based performance formula designed to support stamina and physical output." data-why="Endurance isn't vanity for me — it's capacity. I want clean support that matches how hard I'm willing to train.">Endurance support</button>
+                <button type="button" class="chip ingredient-chip" data-label="Performance focus" data-ingredients="Targeted sport nutrition for people who train with intention, not trends." data-why="I'm proactive about midlife strength and hormonal shifts — products have to earn a place in that rhythm.">Performance focus</button>
+              </div>
+              <p class="chip-hint">Tap + on any chip for ingredients and why they matter</p>
             </div>
           </div>
 
           <div class="carousel-slide" data-slide="2">
             <div class="carousel-shot">
-              <img src="caps-protect.png" alt="RINGANA CAPS protect antioxidant support" loading="lazy" decoding="async" width="200" height="240">
+              <img src="caps-protect.png" alt="RINGANA CAPS protect antioxidant support" loading="lazy" decoding="async" width="200" height="200">
             </div>
             <div class="carousel-copy">
               <p class="radar-kicker">CAPS · Antioxidant</p>
-              <p><strong>Antioxidant CAPS</strong> — plant-powered cell protection I'm eager to test as part of a proactive daily wellness rhythm.</p>
+              <p><strong>CAPS protect</strong> is plant-powered antioxidant support I'm eager to test as part of a proactive daily wellness rhythm — cell protection that fits real life, not a complicated protocol.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Antioxidant blend" data-ingredients="Plant extracts and micronutrients selected to support the body's defense against oxidative stress." data-why="Environmental toxins and daily stress add up. Antioxidant support is one of the clean, intentional disciplines I care about.">Antioxidant blend</button>
+                <button type="button" class="chip ingredient-chip" data-label="Daily cell protection" data-ingredients="Food-based plant actives in capsule form — vegan-friendly supplement design." data-why="I want supplements that feel like food-level integrity: targeted, transparent, and easy to stay consistent with.">Daily cell protection</button>
+              </div>
+              <p class="chip-hint">Tap + on any chip for ingredients and why they matter</p>
             </div>
           </div>
 
           <div class="carousel-slide" data-slide="3">
             <div class="carousel-shot">
-              <img src="drinks-isi.png" alt="RINGANA isi calm juice shots" loading="lazy" decoding="async" width="200" height="240">
+              <img src="drinks-isi.png" alt="RINGANA isi calm juice shots" loading="lazy" decoding="async" width="200" height="200">
             </div>
             <div class="carousel-copy">
               <p class="radar-kicker">DRINKS · Calm Mood Shots</p>
-              <p><strong>isi juice shots</strong> — and calm mood CAPS (moodoo) — for mood, mental clarity, and steady support through stress and hormonal shifts.</p>
+              <p><strong>isi</strong> is the calm juice shot I'm looking forward to — wind-down support with plant extracts and magnesium. Pair that with mood CAPS (moodoo) when I want a steadier daily rhythm through stress and hormonal shifts.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="isi calm shot" data-ingredients="Magnesium and calming plant extracts in a fresh functional shot format." data-why="Sometimes you need something you can feel in the moment — a clean shot that supports relaxation without a heavy formula.">isi calm shot</button>
+                <button type="button" class="chip ingredient-chip" data-label="moodoo CAPS" data-ingredients="Orange peel, schisandra, ashwagandha, green tea, cocoa, saffron, L-theanine, buckwheat germ, magnesium from seawater, biotin, folate, and B vitamins including B6 and B12." data-why="A multi-pathway botanical + nutrient blend for emotional balance and nervous-system support over time — especially useful in stressful or hormonal seasons.">moodoo CAPS</button>
+                <button type="button" class="chip ingredient-chip" data-label="Why calm matters" data-ingredients="Magnesium, biotin, and folate contribute to normal psychological function; B6 and B12 support normal nervous system function." data-why="Recovery taught me that calm isn't optional — it's part of how I protect my energy as a sole provider and mom.">Why calm matters</button>
+              </div>
+              <p class="chip-hint">Tap + on any chip for ingredients and why they matter</p>
             </div>
           </div>
 
           <div class="carousel-slide" data-slide="4">
             <div class="carousel-shot">
-              <img src="caps-beauty-hair.png" alt="RINGANA CAPS beauty &amp; hair" loading="lazy" decoding="async" width="200" height="240">
+              <img src="caps-beauty-hair.png" alt="RINGANA CAPS beauty &amp; hair" loading="lazy" decoding="async" width="200" height="200">
             </div>
             <div class="carousel-copy">
               <p class="radar-kicker">CAPS · Beauty &amp; Hair</p>
-              <p><strong>Beauty &amp; Hair CAPS</strong> — food-based plant extracts that support hair and nails from within. A clean beauty staple I'm looking forward to trying.</p>
+              <p><strong>beauty &amp; hair CAPS</strong> support hair and nails from within with food-based plant extracts — the kind of inside-out clean beauty approach I've trusted for more than a decade.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Hair &amp; nail support" data-ingredients="L-carnosine, saw palmetto, and hyaluronic acid — formulated to strengthen hair and nails from within." data-why="When hair and nails are under stress, topical products only go so far. Internal support is part of a complete clean routine.">Hair &amp; nail support</button>
+                <button type="button" class="chip ingredient-chip" data-label="Food-based actives" data-ingredients="Plant extracts and nutrients in a vegan, gluten-free capsule format." data-why="I want beauty support that meets the same ingredient bar I hold for everything else I put in my body.">Food-based actives</button>
+              </div>
+              <p class="chip-hint">Tap + on any chip for ingredients and why they matter</p>
             </div>
           </div>
 
           <div class="carousel-slide" data-slide="5">
             <div class="carousel-shot">
-              <img src="caps-d-gest.png" alt="RINGANA CAPS d-gest gut health" loading="lazy" decoding="async" width="200" height="240">
+              <img src="caps-d-gest.png" alt="RINGANA CAPS d-gest gut health" loading="lazy" decoding="async" width="200" height="200">
             </div>
             <div class="carousel-copy">
               <p class="radar-kicker">CAPS · Gut Health</p>
-              <p><strong>d-gest CAPS</strong> — gut health support, because digestion and daily wellness are foundational.</p>
+              <p><strong>d-gest CAPS</strong> are on my list because gut health is foundational — digestion, daily comfort, and the kind of steady wellness you feel when your system is actually supported.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Digestive support" data-ingredients="Plant-based digestive formula designed to support gut comfort and everyday digestion." data-why="If digestion is off, everything else feels harder. This is one of the first places I look when I want clean, practical support.">Digestive support</button>
+                <button type="button" class="chip ingredient-chip" data-label="Daily gut rhythm" data-ingredients="Targeted CAPS format — easy to take consistently as part of a morning or evening routine." data-why="Consistency beats intensity. I want gut support I can actually stick with while life stays full.">Daily gut rhythm</button>
+              </div>
+              <p class="chip-hint">Tap + on any chip for ingredients and why they matter</p>
             </div>
           </div>
 
           <div class="carousel-slide" data-slide="6">
             <div class="carousel-shot">
-              <img src="fresh-deodorant.webp" alt="RINGANA FRESH deodorant" loading="lazy" decoding="async" width="200" height="240">
+              <img src="fresh-deodorant.png" alt="RINGANA FRESH deodorant" loading="lazy" decoding="async" width="200" height="200">
             </div>
             <div class="carousel-copy">
               <p class="radar-kicker">FRESH · Deodorant</p>
-              <p><strong>FRESH deodorant</strong> — aluminum-salt-free odor protection with plant oils and natural moisturizers. An everyday essential on my early-access list.</p>
+              <p><strong>FRESH deodorant</strong> is a creamy water-in-oil emulsion that protects against odor without aluminium salts — while nourishing underarm skin with plant oils and natural moisturizers. An everyday essential on my early-access list.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Odour protection" data-ingredients="Zinc oxide, sodium bicarbonate, rice bran water (Oryza sativa), and frankincense (Boswellia serrata)." data-why="Works with your skin's natural function instead of blocking sweat with aluminium — odour control plus care, which matters on skin you treat every single day.">Odour protection</button>
+                <button type="button" class="chip ingredient-chip" data-label="Nourishing care" data-ingredients="Shea butter, oat kernel extract, sesame seed oil, and a blend of nourishing plant oils and botanical extracts including sage and tea tree oils." data-why="Underarm skin deserves the same ingredient scrutiny as anything else you use daily — especially if you shave or have sensitivity there.">Nourishing care</button>
+              </div>
+              <p class="chip-hint">Tap + on any chip for ingredients and why they matter</p>
             </div>
           </div>
 
           <div class="carousel-slide" data-slide="7">
             <div class="carousel-shot">
-              <img src="fresh-hair-duo.webp" alt="RINGANA FRESH hair care duo" loading="lazy" decoding="async" width="200" height="240">
+              <img src="fresh-hair-duo.png" alt="RINGANA FRESH volume shampoo and hair treatment" loading="lazy" decoding="async" width="200" height="200">
             </div>
             <div class="carousel-copy">
               <p class="radar-kicker">FRESH · Hair Care</p>
-              <p><strong>FRESH hair care</strong> — volume shampoo and hair treatment I'm excited to test for body, shine, and manageable lengths.</p>
+              <p><strong>FRESH volume shampoo and FRESH hair treatment</strong> are the duo I'm excited to test — microbiome-friendly cleansing paired with a leave-in treatment for body, shine, and manageable lengths.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Volume shampoo" data-ingredients="Ginseng, nettle, fermented rice water, and a mushroom extract complex (reishi, shiitake, chaga, and snow fungus)." data-why="Volume without heavy silicones that coat and wash away — the mushroom complex delivers moisture while ginseng and nettle support lift and scalp balance.">Volume shampoo</button>
+                <button type="button" class="chip ingredient-chip" data-label="Hair treatment" data-ingredients="Fermented rice water, mushroom extracts, and plant proteins in a versatile leave-in balm." data-why="Works on wet or dry hair as a leave-in or rinse-off mask — structural support and moisture that stays, especially on fine or brittle ends.">Hair treatment</button>
+              </div>
+              <p class="chip-hint">Tap + on any chip for ingredients and why they matter</p>
             </div>
           </div>
 
           <div class="carousel-slide" data-slide="8">
             <div class="carousel-shot">
-              <img src="fresh-tooth-oil.png" alt="RINGANA FRESH tooth oil" loading="lazy" decoding="async" width="200" height="240">
+              <img src="fresh-tooth-oil.png" alt="RINGANA FRESH tooth oil" loading="lazy" decoding="async" width="200" height="200">
             </div>
             <div class="carousel-copy">
               <p class="radar-kicker">FRESH · Tooth Oil</p>
-              <p><strong>FRESH tooth oil</strong> — fresh oral care without the usual compromise list.</p>
+              <p><strong>FRESH tooth oil</strong> is fresh oral care without the usual compromise list — another everyday product where ingredient integrity actually matters to me.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Fresh oral care" data-ingredients="Plant-oil based tooth oil formulated for daily oral care without conventional compromise additives." data-why="Oral care products sit in your mouth every day. That alone makes clean formulation non-negotiable for me.">Fresh oral care</button>
+                <button type="button" class="chip ingredient-chip" data-label="Made fresh" data-ingredients="Part of Ringana's FRESH line — small-batch production with short expiration dates." data-why="A short date is proof nothing artificial is holding the formula together on a warehouse shelf.">Made fresh</button>
+              </div>
+              <p class="chip-hint">Tap + on any chip for ingredients and why they matter</p>
             </div>
           </div>
 </div>
