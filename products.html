@@ -367,6 +367,9 @@ section{padding:5.5rem 2rem;}
   max-width:none;
   white-space:nowrap;
   padding:0 .75rem;
+  font-size:.92rem;
+  letter-spacing:.03em;
+  opacity:.65;
 }
 
 /* Freshness explainer */
@@ -906,43 +909,56 @@ footer p{font-size:.8rem;opacity:.6;max-width:70ch;margin:0 auto .5rem;}
     <div class="reveal" style="text-align:center;">
       <p class="eyebrow">On My Radar</p>
       <h2 class="section-title" style="margin-left:auto;margin-right:auto;max-width:20ch;">What I'm most looking forward to trying.</h2>
-      <p class="lede" style="margin-left:auto;margin-right:auto;">The full U.S. lineup is still being finalized, but through my partnership with Ringana I'm getting early access before anyone else in the USA. These are the products I'm most excited to test first — focused on strength, mood, gut health, hair, and everyday fresh care. Join the list and you'll hear my honest take as I work through them.</p>
+      <p class="lede" style="margin-left:auto;margin-right:auto;">The full U.S. lineup is still being finalized, but through my partnership with Ringana I'm getting early access before anyone else in the USA. These are the products I'm most excited to test first — grouped by type: FRESH care, CAPS, calm drinks, and SPORT. Join the list and you'll hear my honest take as I work through them.</p>
     </div>
     <div class="radar-carousel reveal" id="radarCarousel" aria-roledescription="carousel" aria-label="Products on my radar">
       <button type="button" class="carousel-btn prev" aria-label="Previous product">&#8249;</button>
       <div class="carousel-viewport">
         <div class="carousel-track" id="carouselTrack">
-          <div class="carousel-slide" data-slide="0">
+<div class="carousel-slide" data-slide="0">
             <div class="carousel-shot">
-              <img src="sport-protein.png" alt="RINGANA SPORT protein powder" loading="lazy" decoding="async" width="200" height="200">
+              <img src="fresh-deodorant.png" alt="RINGANA FRESH deodorant" loading="lazy" decoding="async" width="200" height="200">
             </div>
             <div class="carousel-copy">
-              <p class="radar-kicker">SPORT · Protein Powder</p>
-              <p><strong>SPORT protein</strong> (vegan &amp; gluten free) delivers about 27 g of plant protein per sachet — clean fuel for building and maintaining muscle so I can show up stronger in midlife.</p>
+              <p class="radar-kicker">FRESH · Deodorant</p>
+              <p><strong>FRESH deodorant</strong> is a creamy water-in-oil emulsion that protects against odor without aluminium salts — while nourishing underarm skin with plant oils and natural moisturizers. An everyday essential on my early-access list.</p>
               <div class="chip-row">
-                <button type="button" class="chip ingredient-chip" data-label="Pea · rice · flax protein" data-ingredients="Fermented pea protein isolate, rice protein isolate, and golden flaxseed powder — a complete plant-protein blend with all 20 proteinogenic amino acids." data-why="I want vegan protein with a real amino-acid profile — not a compromise shake with a mystery blend.">Pea · rice · flax protein</button>
-                <button type="button" class="chip ingredient-chip" data-label="Bacillus coagulans" data-ingredients="Probiotic Bacillus coagulans GBI-30 6086 to support protein digestion and uptake." data-why="Protein only helps if your body can use it — digestive support is part of why this formula earned a spot on my list.">Bacillus coagulans</button>
-                <button type="button" class="chip ingredient-chip" data-label="Vitamins &amp; minerals" data-ingredients="Buckwheat germ powder (B vitamins), acerola (vitamin C), vitamin D3 from algae, plus magnesium and calcium citrates." data-why="Strength training needs more than protein alone — energy metabolism and muscle function support matter too.">Vitamins &amp; minerals</button>
+                <button type="button" class="chip ingredient-chip" data-label="Odour protection" data-ingredients="Zinc oxide, sodium bicarbonate (baking soda), rice husk water (Oryza sativa), and frankincense (Boswellia serrata)." data-why="Works with your skin's natural function instead of blocking sweat with aluminium — odour control plus care, which matters on skin you treat every single day.">Odour protection</button>
+                <button type="button" class="chip ingredient-chip" data-label="Nourishing care" data-ingredients="Sesame seed oil, shea/oat care complex, sage oil, and tea tree oil — plus other plant oils and butters in the water-in-oil emulsion." data-why="Underarm skin deserves the same ingredient scrutiny as anything else you use daily — especially if you shave or have sensitivity there.">Nourishing care</button>
               </div>
             </div>
           </div>
 
-          <div class="carousel-slide" data-slide="1">
+<div class="carousel-slide" data-slide="1">
             <div class="carousel-shot">
-              <img src="sport-endurance.png" alt="RINGANA SPORT endurance &amp; performance" loading="lazy" decoding="async" width="200" height="200">
+              <img src="fresh-hair-duo.png" alt="RINGANA FRESH volume shampoo and hair treatment" loading="lazy" decoding="async" width="200" height="200">
             </div>
             <div class="carousel-copy">
-              <p class="radar-kicker">SPORT · Endurance &amp; Performance</p>
-              <p><strong>SPORT endurance</strong> is an isotonic carbohydrate-electrolyte drink for training — fast and complex carbs for energy, plus minerals that support muscle function and fluid balance.</p>
+              <p class="radar-kicker">FRESH · Hair Care</p>
+              <p><strong>FRESH volume shampoo and FRESH hair treatment</strong> are the duo I'm excited to test — microbiome-friendly cleansing paired with a leave-in treatment for body, shine, and manageable lengths.</p>
               <div class="chip-row">
-                <button type="button" class="chip ingredient-chip" data-label="Fast &amp; complex carbs" data-ingredients="A mix of complex carbohydrates (including maltodextrin and soluble waxy maize starch) and simpler carbs (dextrose plus fruit sugars) for both immediate and longer-lasting energy." data-why="During longer sessions I need fuel that kicks in and keeps going — not a sugar spike and crash.">Fast &amp; complex carbs</button>
-                <button type="button" class="chip ingredient-chip" data-label="Electrolytes" data-ingredients="Magnesium, calcium, potassium, and selenium — minerals that support electrolyte balance, muscle function, and cell protection under training stress." data-why="Sweat costs minerals. Replacing them is part of training with intention, not just pushing harder.">Electrolytes</button>
-                <button type="button" class="chip ingredient-chip" data-label="Betaine" data-ingredients="Betaine to help cells maintain water balance under osmotic stress from fluid loss during intense training." data-why="Endurance is capacity — cellular hydration support belongs in that conversation.">Betaine</button>
+                <button type="button" class="chip ingredient-chip" data-label="Volume shampoo" data-ingredients="Ginseng, nettle, fermented rice water, and a mushroom extract complex (reishi, shiitake, chaga, and snow fungus)." data-why="Volume without heavy silicones that coat and wash away — the mushroom complex delivers moisture while ginseng and nettle support lift and scalp balance.">Volume shampoo</button>
+                <button type="button" class="chip ingredient-chip" data-label="Hair treatment" data-ingredients="Fermented rice water, mushroom extracts, and plant proteins in a versatile leave-in balm." data-why="Works on wet or dry hair as a leave-in or rinse-off mask — structural support and moisture that stays, especially on fine or brittle ends.">Hair treatment</button>
               </div>
             </div>
           </div>
 
-          <div class="carousel-slide" data-slide="2">
+<div class="carousel-slide" data-slide="2">
+            <div class="carousel-shot">
+              <img src="fresh-tooth-oil.png" alt="RINGANA FRESH tooth oil" loading="lazy" decoding="async" width="200" height="200">
+            </div>
+            <div class="carousel-copy">
+              <p class="radar-kicker">FRESH · Tooth Oil</p>
+              <p><strong>FRESH tooth oil</strong> is oil-based oral care — sesame oil with xylitol, mint, turmeric, and essential oils — another everyday product where ingredient integrity matters.</p>
+              <div class="chip-row">
+                <button type="button" class="chip ingredient-chip" data-label="Sesame oil base" data-ingredients="Sesame seed oil (Sesamum indicum) as the base, with hydrated silica for gentle cleaning texture." data-why="Oral care sits in your mouth every day — I want to know the base oil, not just a vague 'natural formula' claim.">Sesame oil base</button>
+                <button type="button" class="chip ingredient-chip" data-label="Xylitol · mint · turmeric" data-ingredients="Xylitol, Mentha arvensis leaf oil / menthol, and Curcuma xanthorrhiza (turmeric) root extract." data-why="These are the practical oral-care actives that make tooth oil feel like a real routine, not a novelty.">Xylitol · mint · turmeric</button>
+                <button type="button" class="chip ingredient-chip" data-label="Essential oil complex" data-ingredients="Essential oils including eucalyptus, clove, lemon, star anise, and myrrh — plus supportive botanicals in the FRESH oral-care formula." data-why="A short ingredient story still has to be honest about the aromatic/botanical complex.">Essential oil complex</button>
+              </div>
+            </div>
+          </div>
+
+<div class="carousel-slide" data-slide="3">
             <div class="carousel-shot">
               <img src="caps-protect.png" alt="RINGANA CAPS protect antioxidant support" loading="lazy" decoding="async" width="200" height="200">
             </div>
@@ -957,22 +973,7 @@ footer p{font-size:.8rem;opacity:.6;max-width:70ch;margin:0 auto .5rem;}
             </div>
           </div>
 
-          <div class="carousel-slide" data-slide="3">
-            <div class="carousel-shot">
-              <img src="drinks-isi.png" alt="RINGANA isi calm juice shots" loading="lazy" decoding="async" width="200" height="200">
-            </div>
-            <div class="carousel-copy">
-              <p class="radar-kicker">DRINKS · Calm Mood Shots</p>
-              <p><strong>isi</strong> is the wind-down drink on my list — magnesium plus calming botanicals. Pair it with <strong>moodoo CAPS</strong> when I want steadier daily support through stress and hormonal shifts.</p>
-              <div class="chip-row">
-                <button type="button" class="chip ingredient-chip" data-label="isi botanicals" data-ingredients="Calming plant extracts including passion flower, lemon balm, and ashwagandha, with magnesium support in a functional drink format." data-why="Evening wind-down has to be clean and intentional — these are the botanicals behind isi's calm positioning.">isi botanicals</button>
-                <button type="button" class="chip ingredient-chip" data-label="moodoo CAPS" data-ingredients="Orange peel extract, schisandra berry, ashwagandha, green tea extract, cocoa seed extract, saffron, L-theanine, buckwheat germ powder, magnesium from seawater, biotin, folate, and B vitamins including B6 and B12." data-why="A multi-pathway botanical + nutrient blend for emotional balance and nervous-system support over time.">moodoo CAPS</button>
-                <button type="button" class="chip ingredient-chip" data-label="Nervous-system nutrients" data-ingredients="Magnesium, biotin, and folate contribute to normal psychological function; vitamins B6 and B12 support normal nervous system function." data-why="Recovery taught me that calm isn't optional — it's how I protect my energy as a sole provider and mom.">Nervous-system nutrients</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-slide" data-slide="4">
+<div class="carousel-slide" data-slide="4">
             <div class="carousel-shot">
               <img src="caps-beauty-hair.png" alt="RINGANA CAPS beauty &amp; hair" loading="lazy" decoding="async" width="200" height="200">
             </div>
@@ -986,7 +987,7 @@ footer p{font-size:.8rem;opacity:.6;max-width:70ch;margin:0 auto .5rem;}
             </div>
           </div>
 
-          <div class="carousel-slide" data-slide="5">
+<div class="carousel-slide" data-slide="5">
             <div class="carousel-shot">
               <img src="caps-d-gest.png" alt="RINGANA CAPS d-gest gut health" loading="lazy" decoding="async" width="200" height="200">
             </div>
@@ -1001,45 +1002,47 @@ footer p{font-size:.8rem;opacity:.6;max-width:70ch;margin:0 auto .5rem;}
             </div>
           </div>
 
-          <div class="carousel-slide" data-slide="6">
+<div class="carousel-slide" data-slide="6">
             <div class="carousel-shot">
-              <img src="fresh-deodorant.png" alt="RINGANA FRESH deodorant" loading="lazy" decoding="async" width="200" height="200">
+              <img src="drinks-isi.png" alt="RINGANA isi calm juice shots" loading="lazy" decoding="async" width="200" height="200">
             </div>
             <div class="carousel-copy">
-              <p class="radar-kicker">FRESH · Deodorant</p>
-              <p><strong>FRESH deodorant</strong> is a creamy water-in-oil emulsion that protects against odor without aluminium salts — while nourishing underarm skin with plant oils and natural moisturizers. An everyday essential on my early-access list.</p>
+              <p class="radar-kicker">DRINKS · Calm Mood Shots</p>
+              <p><strong>isi</strong> is the wind-down drink on my list — magnesium plus calming botanicals. Pair it with <strong>moodoo CAPS</strong> when I want steadier daily support through stress and hormonal shifts.</p>
               <div class="chip-row">
-                <button type="button" class="chip ingredient-chip" data-label="Odour protection" data-ingredients="Zinc oxide, sodium bicarbonate (baking soda), rice husk water (Oryza sativa), and frankincense (Boswellia serrata)." data-why="Works with your skin's natural function instead of blocking sweat with aluminium — odour control plus care, which matters on skin you treat every single day.">Odour protection</button>
-                <button type="button" class="chip ingredient-chip" data-label="Nourishing care" data-ingredients="Sesame seed oil, shea/oat care complex, sage oil, and tea tree oil — plus other plant oils and butters in the water-in-oil emulsion." data-why="Underarm skin deserves the same ingredient scrutiny as anything else you use daily — especially if you shave or have sensitivity there.">Nourishing care</button>
+                <button type="button" class="chip ingredient-chip" data-label="isi botanicals" data-ingredients="Calming plant extracts including passion flower, lemon balm, and ashwagandha, with magnesium support in a functional drink format." data-why="Evening wind-down has to be clean and intentional — these are the botanicals behind isi's calm positioning.">isi botanicals</button>
+                <button type="button" class="chip ingredient-chip" data-label="moodoo CAPS" data-ingredients="Orange peel extract, schisandra berry, ashwagandha, green tea extract, cocoa seed extract, saffron, L-theanine, buckwheat germ powder, magnesium from seawater, biotin, folate, and B vitamins including B6 and B12." data-why="A multi-pathway botanical + nutrient blend for emotional balance and nervous-system support over time.">moodoo CAPS</button>
+                <button type="button" class="chip ingredient-chip" data-label="Nervous-system nutrients" data-ingredients="Magnesium, biotin, and folate contribute to normal psychological function; vitamins B6 and B12 support normal nervous system function." data-why="Recovery taught me that calm isn't optional — it's how I protect my energy as a sole provider and mom.">Nervous-system nutrients</button>
               </div>
             </div>
           </div>
 
-          <div class="carousel-slide" data-slide="7">
+<div class="carousel-slide" data-slide="7">
             <div class="carousel-shot">
-              <img src="fresh-hair-duo.png" alt="RINGANA FRESH volume shampoo and hair treatment" loading="lazy" decoding="async" width="200" height="200">
+              <img src="sport-protein.png" alt="RINGANA SPORT protein powder" loading="lazy" decoding="async" width="200" height="200">
             </div>
             <div class="carousel-copy">
-              <p class="radar-kicker">FRESH · Hair Care</p>
-              <p><strong>FRESH volume shampoo and FRESH hair treatment</strong> are the duo I'm excited to test — microbiome-friendly cleansing paired with a leave-in treatment for body, shine, and manageable lengths.</p>
+              <p class="radar-kicker">SPORT · Protein Powder</p>
+              <p><strong>SPORT protein</strong> (vegan &amp; gluten free) delivers about 27 g of plant protein per sachet — clean fuel for building and maintaining muscle so I can show up stronger in midlife.</p>
               <div class="chip-row">
-                <button type="button" class="chip ingredient-chip" data-label="Volume shampoo" data-ingredients="Ginseng, nettle, fermented rice water, and a mushroom extract complex (reishi, shiitake, chaga, and snow fungus)." data-why="Volume without heavy silicones that coat and wash away — the mushroom complex delivers moisture while ginseng and nettle support lift and scalp balance.">Volume shampoo</button>
-                <button type="button" class="chip ingredient-chip" data-label="Hair treatment" data-ingredients="Fermented rice water, mushroom extracts, and plant proteins in a versatile leave-in balm." data-why="Works on wet or dry hair as a leave-in or rinse-off mask — structural support and moisture that stays, especially on fine or brittle ends.">Hair treatment</button>
+                <button type="button" class="chip ingredient-chip" data-label="Pea · rice · flax protein" data-ingredients="Fermented pea protein isolate, rice protein isolate, and golden flaxseed powder — a complete plant-protein blend with all 20 proteinogenic amino acids." data-why="I want vegan protein with a real amino-acid profile — not a compromise shake with a mystery blend.">Pea · rice · flax protein</button>
+                <button type="button" class="chip ingredient-chip" data-label="Bacillus coagulans" data-ingredients="Probiotic Bacillus coagulans GBI-30 6086 to support protein digestion and uptake." data-why="Protein only helps if your body can use it — digestive support is part of why this formula earned a spot on my list.">Bacillus coagulans</button>
+                <button type="button" class="chip ingredient-chip" data-label="Vitamins &amp; minerals" data-ingredients="Buckwheat germ powder (B vitamins), acerola (vitamin C), vitamin D3 from algae, plus magnesium and calcium citrates." data-why="Strength training needs more than protein alone — energy metabolism and muscle function support matter too.">Vitamins &amp; minerals</button>
               </div>
             </div>
           </div>
 
-          <div class="carousel-slide" data-slide="8">
+<div class="carousel-slide" data-slide="8">
             <div class="carousel-shot">
-              <img src="fresh-tooth-oil.png" alt="RINGANA FRESH tooth oil" loading="lazy" decoding="async" width="200" height="200">
+              <img src="sport-endurance.png" alt="RINGANA SPORT endurance &amp; performance" loading="lazy" decoding="async" width="200" height="200">
             </div>
             <div class="carousel-copy">
-              <p class="radar-kicker">FRESH · Tooth Oil</p>
-              <p><strong>FRESH tooth oil</strong> is oil-based oral care — sesame oil with xylitol, mint, turmeric, and essential oils — another everyday product where ingredient integrity matters.</p>
+              <p class="radar-kicker">SPORT · Endurance &amp; Performance</p>
+              <p><strong>SPORT endurance</strong> is an isotonic carbohydrate-electrolyte drink for training — fast and complex carbs for energy, plus minerals that support muscle function and fluid balance.</p>
               <div class="chip-row">
-                <button type="button" class="chip ingredient-chip" data-label="Sesame oil base" data-ingredients="Sesame seed oil (Sesamum indicum) as the base, with hydrated silica for gentle cleaning texture." data-why="Oral care sits in your mouth every day — I want to know the base oil, not just a vague 'natural formula' claim.">Sesame oil base</button>
-                <button type="button" class="chip ingredient-chip" data-label="Xylitol · mint · turmeric" data-ingredients="Xylitol, Mentha arvensis leaf oil / menthol, and Curcuma xanthorrhiza (turmeric) root extract." data-why="These are the practical oral-care actives that make tooth oil feel like a real routine, not a novelty.">Xylitol · mint · turmeric</button>
-                <button type="button" class="chip ingredient-chip" data-label="Essential oil complex" data-ingredients="Essential oils including eucalyptus, clove, lemon, star anise, and myrrh — plus supportive botanicals in the FRESH oral-care formula." data-why="A short ingredient story still has to be honest about the aromatic/botanical complex.">Essential oil complex</button>
+                <button type="button" class="chip ingredient-chip" data-label="Fast &amp; complex carbs" data-ingredients="A mix of complex carbohydrates (including maltodextrin and soluble waxy maize starch) and simpler carbs (dextrose plus fruit sugars) for both immediate and longer-lasting energy." data-why="During longer sessions I need fuel that kicks in and keeps going — not a sugar spike and crash.">Fast &amp; complex carbs</button>
+                <button type="button" class="chip ingredient-chip" data-label="Electrolytes" data-ingredients="Magnesium, calcium, potassium, and selenium — minerals that support electrolyte balance, muscle function, and cell protection under training stress." data-why="Sweat costs minerals. Replacing them is part of training with intention, not just pushing harder.">Electrolytes</button>
+                <button type="button" class="chip ingredient-chip" data-label="Betaine" data-ingredients="Betaine to help cells maintain water balance under osmotic stress from fluid loss during intense training." data-why="Endurance is capacity — cellular hydration support belongs in that conversation.">Betaine</button>
               </div>
             </div>
           </div>
