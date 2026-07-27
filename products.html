@@ -397,10 +397,13 @@ section{padding:5.5rem 2rem;}
   position:relative;
   margin-top:2.6rem;
   padding:0 2.8rem;
+  overflow:hidden;
 }
 .carousel-viewport{overflow:hidden;width:100%;}
 .carousel-track{
   display:flex;
+  flex-wrap:nowrap;
+  width:100%;
   transition:transform .5s cubic-bezier(.4,0,.2,1);
   will-change:transform;
 }
@@ -408,6 +411,7 @@ section{padding:5.5rem 2rem;}
   flex:0 0 100%;
   width:100%;
   min-width:100%;
+  max-width:100%;
   box-sizing:border-box;
   display:grid;
   grid-template-columns:1fr;
@@ -909,7 +913,7 @@ footer p{font-size:.8rem;opacity:.6;max-width:70ch;margin:0 auto .5rem;}
     <div class="reveal" style="text-align:center;">
       <p class="eyebrow">On My Radar</p>
       <h2 class="section-title" style="margin-left:auto;margin-right:auto;max-width:20ch;">What I'm most looking forward to trying.</h2>
-      <p class="lede" style="margin-left:auto;margin-right:auto;">The full U.S. lineup is still being finalized, but through my partnership with Ringana I'm getting early access before anyone else in the USA. These are the products I'm most excited to test first — grouped by type: FRESH care, CAPS (including moodoo), isi, and SPORT. Join the list and you'll hear my honest take as I work through them.</p>
+      <p class="lede" style="margin-left:auto;margin-right:auto;">The full U.S. lineup is still being finalized, but through my partnership with Ringana I'm getting early access before anyone else in the USA. These are the products I'm most excited to test first. Join the list and you'll hear my honest take as I work through them.</p>
     </div>
     <div class="radar-carousel reveal" id="radarCarousel" aria-roledescription="carousel" aria-label="Products on my radar">
       <button type="button" class="carousel-btn prev" aria-label="Previous product">&#8249;</button>
@@ -966,9 +970,9 @@ footer p{font-size:.8rem;opacity:.6;max-width:70ch;margin:0 auto .5rem;}
               <p class="radar-kicker">CAPS · Antioxidant</p>
               <p><strong>CAPS protect</strong> is antioxidant support built around targeted plant extracts — the kind of proactive daily protection I want in a clean capsule format.</p>
               <div class="chip-row">
-                <button type="button" class="chip ingredient-chip" data-label="Polypodium &amp; botanicals" data-ingredients="Polypodium leucotomos leaf extract, blood orange extract, green tea extract, and marigold (Tagetes) flower extract." data-why="These are the plant actives behind the antioxidant story — not a generic multivitamin dump.">Polypodium &amp; botanicals</button>
+                <button type="button" class="chip ingredient-chip" data-label="Polypodium &amp; botanicals" data-ingredients="Polypodium leucotomos leaf extract, blood orange extract, green tea extract, and marigold (Tagetes) flower extract." data-why="These are the plant actives behind the antioxidant story — not a generic multivitamin dump.">Polypodium & botanicals</button>
                 <button type="button" class="chip ingredient-chip" data-label="Astaxanthin" data-ingredients="Astaxanthin from Haematococcus (blood rain algae) extract — a carotenoid antioxidant." data-why="Astaxanthin is one of the reasons this formula feels more intentional than a basic antioxidant blend.">Astaxanthin</button>
-                <button type="button" class="chip ingredient-chip" data-label="L-tyrosine &amp; copper" data-ingredients="L-tyrosine plus copper bisglycinate in a vegan capsule shell (hydroxypropyl methylcellulose)." data-why="I want the full picture on what's in the tin — including the supporting nutrients, not just the headline extract.">L-tyrosine &amp; copper</button>
+                <button type="button" class="chip ingredient-chip" data-label="L-tyrosine &amp; copper" data-ingredients="L-tyrosine plus copper bisglycinate in a vegan capsule shell (hydroxypropyl methylcellulose)." data-why="I want the full picture on what's in the tin — including the supporting nutrients, not just the headline extract.">L-tyrosine & copper</button>
               </div>
             </div>
           </div>
@@ -978,8 +982,8 @@ footer p{font-size:.8rem;opacity:.6;max-width:70ch;margin:0 auto .5rem;}
               <img src="caps-beauty-hair.png" alt="RINGANA CAPS beauty &amp; hair" loading="lazy" decoding="async" width="200" height="200">
             </div>
             <div class="carousel-copy">
-              <p class="radar-kicker">CAPS · Beauty &amp; Hair</p>
-              <p><strong>beauty &amp; hair CAPS</strong> support hair and nails from within — L-carnosine, saw palmetto, hyaluronic acid, and plant extracts in a vegan capsule.</p>
+              <p class="radar-kicker">CAPS · Beauty & Hair</p>
+              <p><strong>beauty & hair CAPS</strong> support hair and nails from within — L-carnosine, saw palmetto, hyaluronic acid, and plant extracts in a vegan capsule.</p>
               <div class="chip-row">
                 <button type="button" class="chip ingredient-chip" data-label="L-carnosine · HA · saw palmetto" data-ingredients="L-carnosine, hyaluronic acid, and saw palmetto extract — core actives for hair, nails, and inner beauty support." data-why="When hair and nails are under stress, internal support is part of a complete clean routine.">L-carnosine · HA · saw palmetto</button>
                 <button type="button" class="chip ingredient-chip" data-label="Plant extracts" data-ingredients="Buckwheat germ powder, pea sprout extract, melon extract, cranberry extract, green tea extract, and sodium R-lipoate in a vegan capsule shell." data-why="I want beauty support that meets the same ingredient bar I hold for everything else I put in my body.">Plant extracts</button>
@@ -997,7 +1001,7 @@ footer p{font-size:.8rem;opacity:.6;max-width:70ch;margin:0 auto .5rem;}
               <div class="chip-row">
                 <button type="button" class="chip ingredient-chip" data-label="Enzyme complex" data-ingredients="Fermented enzyme complex with amylase, lactase, protease, cellulase, and lipase — to help break down carbs, lactose, protein, fibre, and fats." data-why="If digestion is off, everything else feels harder. Enzymes are the practical core of this formula.">Enzyme complex</button>
                 <button type="button" class="chip ingredient-chip" data-label="Artichoke · milk thistle · ginger" data-ingredients="Artichoke leaf/flower extract, milk thistle phospholipid complex, fermented ginger extract, plus dandelion and gentian root extracts." data-why="These botanicals are why d-gest feels like more than a basic digestive enzyme bottle.">Artichoke · milk thistle · ginger</button>
-                <button type="button" class="chip ingredient-chip" data-label="Choline &amp; zinc" data-ingredients="Choline bitartrate and zinc bisglycinate, with papaya extract in a vegan capsule shell." data-why="Supporting nutrients matter for a formula I'm trusting as daily gut infrastructure.">Choline &amp; zinc</button>
+                <button type="button" class="chip ingredient-chip" data-label="Choline &amp; zinc" data-ingredients="Choline bitartrate and zinc bisglycinate, with papaya extract in a vegan capsule shell." data-why="Supporting nutrients matter for a formula I'm trusting as daily gut infrastructure.">Choline & zinc</button>
               </div>
             </div>
           </div>
@@ -1011,7 +1015,7 @@ footer p{font-size:.8rem;opacity:.6;max-width:70ch;margin:0 auto .5rem;}
               <p><strong>moodoo CAPS</strong> support emotional balance and mental resilience with plant extracts, magnesium, biotin, folate, and B vitamins — especially during stressful seasons or hormonal shifts.</p>
               <div class="chip-row">
                 <button type="button" class="chip ingredient-chip" data-label="Plant extracts" data-ingredients="Orange peel extract, schisandra berry extract, ashwagandha root extract, green tea extract, cocoa seed extract, saffron extract, L-theanine, and buckwheat germ powder." data-why="A multi-pathway botanical blend — not a single hero ingredient — for calm, clarity, and emotional equilibrium over time.">Plant extracts</button>
-                <button type="button" class="chip ingredient-chip" data-label="Magnesium &amp; B vitamins" data-ingredients="Magnesium from seawater, biotin, folate, and B vitamins including B6 and B12." data-why="Magnesium, biotin, and folate contribute to normal psychological function; B6 and B12 support normal nervous system function — the nutritional backbone behind the botanicals.">Magnesium &amp; B vitamins</button>
+                <button type="button" class="chip ingredient-chip" data-label="Magnesium &amp; B vitamins" data-ingredients="Magnesium from seawater, biotin, folate, and B vitamins including B6 and B12." data-why="Magnesium, biotin, and folate contribute to normal psychological function; B6 and B12 support normal nervous system function — the nutritional backbone behind the botanicals.">Magnesium & B vitamins</button>
                 <button type="button" class="chip ingredient-chip" data-label="Daily resilience" data-ingredients="Formulated for emotional balance during stress, seasonal low moods, and hormonal shifts — three capsules a day in a vegan capsule shell." data-why="Recovery taught me that calm isn't optional — it's how I protect my energy as a sole provider and mom.">Daily resilience</button>
               </div>
             </div>
@@ -1038,11 +1042,11 @@ footer p{font-size:.8rem;opacity:.6;max-width:70ch;margin:0 auto .5rem;}
             </div>
             <div class="carousel-copy">
               <p class="radar-kicker">SPORT · Protein Powder</p>
-              <p><strong>SPORT protein</strong> (vegan &amp; gluten free) delivers about 27 g of plant protein per sachet — clean fuel for building and maintaining muscle so I can show up stronger in midlife.</p>
+              <p><strong>SPORT protein</strong> (vegan & gluten free) delivers about 27 g of plant protein per sachet — clean fuel for building and maintaining muscle so I can show up stronger in midlife.</p>
               <div class="chip-row">
                 <button type="button" class="chip ingredient-chip" data-label="Pea · rice · flax protein" data-ingredients="Fermented pea protein isolate, rice protein isolate, and golden flaxseed powder — a complete plant-protein blend with all 20 proteinogenic amino acids." data-why="I want vegan protein with a real amino-acid profile — not a compromise shake with a mystery blend.">Pea · rice · flax protein</button>
                 <button type="button" class="chip ingredient-chip" data-label="Bacillus coagulans" data-ingredients="Probiotic Bacillus coagulans GBI-30 6086 to support protein digestion and uptake." data-why="Protein only helps if your body can use it — digestive support is part of why this formula earned a spot on my list.">Bacillus coagulans</button>
-                <button type="button" class="chip ingredient-chip" data-label="Vitamins &amp; minerals" data-ingredients="Buckwheat germ powder (B vitamins), acerola (vitamin C), vitamin D3 from algae, plus magnesium and calcium citrates." data-why="Strength training needs more than protein alone — energy metabolism and muscle function support matter too.">Vitamins &amp; minerals</button>
+                <button type="button" class="chip ingredient-chip" data-label="Vitamins &amp; minerals" data-ingredients="Buckwheat germ powder (B vitamins), acerola (vitamin C), vitamin D3 from algae, plus magnesium and calcium citrates." data-why="Strength training needs more than protein alone — energy metabolism and muscle function support matter too.">Vitamins & minerals</button>
               </div>
             </div>
           </div>
@@ -1052,16 +1056,16 @@ footer p{font-size:.8rem;opacity:.6;max-width:70ch;margin:0 auto .5rem;}
               <img src="sport-endurance.png" alt="RINGANA SPORT endurance &amp; performance" loading="lazy" decoding="async" width="200" height="200">
             </div>
             <div class="carousel-copy">
-              <p class="radar-kicker">SPORT · Endurance &amp; Performance</p>
+              <p class="radar-kicker">SPORT · Endurance & Performance</p>
               <p><strong>SPORT endurance</strong> is an isotonic carbohydrate-electrolyte drink for training — fast and complex carbs for energy, plus minerals that support muscle function and fluid balance.</p>
               <div class="chip-row">
-                <button type="button" class="chip ingredient-chip" data-label="Fast &amp; complex carbs" data-ingredients="A mix of complex carbohydrates (including maltodextrin and soluble waxy maize starch) and simpler carbs (dextrose plus fruit sugars) for both immediate and longer-lasting energy." data-why="During longer sessions I need fuel that kicks in and keeps going — not a sugar spike and crash.">Fast &amp; complex carbs</button>
+                <button type="button" class="chip ingredient-chip" data-label="Fast &amp; complex carbs" data-ingredients="A mix of complex carbohydrates (including maltodextrin and soluble waxy maize starch) and simpler carbs (dextrose plus fruit sugars) for both immediate and longer-lasting energy." data-why="During longer sessions I need fuel that kicks in and keeps going — not a sugar spike and crash.">Fast & complex carbs</button>
                 <button type="button" class="chip ingredient-chip" data-label="Electrolytes" data-ingredients="Magnesium, calcium, potassium, and selenium — minerals that support electrolyte balance, muscle function, and cell protection under training stress." data-why="Sweat costs minerals. Replacing them is part of training with intention, not just pushing harder.">Electrolytes</button>
                 <button type="button" class="chip ingredient-chip" data-label="Betaine" data-ingredients="Betaine to help cells maintain water balance under osmotic stress from fluid loss during intense training." data-why="Endurance is capacity — cellular hydration support belongs in that conversation.">Betaine</button>
               </div>
             </div>
           </div>
-</div>
+        </div>
       </div>
       <button type="button" class="carousel-btn next" aria-label="Next product">&#8250;</button>
       <p class="chip-hint">Tap + on any chip for ingredients and why they matter</p>
@@ -1070,7 +1074,7 @@ footer p{font-size:.8rem;opacity:.6;max-width:70ch;margin:0 auto .5rem;}
         <span class="carousel-counter" id="carouselCounter" aria-live="polite">1 / 10</span>
       </div>
     </div>
-    <p class="radar-foot reveal">Plenty more where these came from. As early-access products land in my hands, I'll share first impressions, ingredient breakdowns, and who each one is actually for — straight to the founding list.</p>
+<p class="radar-foot reveal">Plenty more where these came from. As early-access products land in my hands, I'll share first impressions, ingredient breakdowns, and who each one is actually for — straight to the founding list.</p>
     <p class="reveal" style="text-align:center;margin-top:1.8rem;"><a href="https://instagram.com/aprettybalance" class="btn btn-pine" target="_blank" rel="noopener">Message Me on Instagram</a></p>
   </div>
 </section>
